@@ -1,0 +1,69 @@
+html, body {
+    font-family: 'Manrope', sans-serif;  /* Гарнітура для основного тексту */
+    font-size: 16px;        /* Розмір шрифта основного тексту */
+    line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
+    letter-spacing: 0.005em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
+    scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
+    }
+
+/* заголовки */
+
+h1{
+font-family: 'Space Grotesk', sans-serif;   /* Гарнітура для заголовків */
+font-size: 80px;    
+font-weight: rem;    /* Накреслення для заголовків */
+text-align: center;   /* Вирівнювання тексту заголовків */
+line-height: 1.0;
+margin: 0 0 .5em;   /* Відступ знизу після заголовку */
+color: var(--txt-color-h1);
+}
+
+h2{
+font-family: 'Space Grotesk', sans-serif;   /* Гарнітура для заголовків */
+font-size: 80px;    
+font-weight: rem;    /* Накреслення для заголовків */
+text-color:  rgb(103, 9, 9);
+}
+
+h3{
+font-family: 'Space Grotesk', sans-serif;   /* Гарнітура для заголовків */
+font-size: 80px;    
+font-weight: rem;    /* Накреслення для заголовків */
+text-color:  rgb(103, 9, 9);
+}
+
+/* текст */
+
+
+
+p {
+    margin-bottom: .75em;   /* Відступ знизу після абзацу */
+}
+
+a {
+    color: var(--lnk-color-1);  /* Основний колір текстових лінків */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--lnk-color-2);  /* Колір текстових лінків (hover) при наведенні курсору */
+    text-decoration: none;
+}
+
+.img-box svg,
+.img-box img {
+    display: block; /* Відображати зображення (<img>, <svg>) всередині контейнера .img-box як блочний елемент */
+    width: 100%;
+    max-height: 100%;              /* Обмеження висоти зображень у 65% висоти в'юпорта */
+    object-fit: cover;            /*  */
+    object-position: center center; /* Позиція зображення */
+}
+
+.button {
+    display: inline-block;
+    border-radius: var(--bord-radius);
+    padding: 8px 16px;
+    background-color: var(--bg-color-1);
+    color: var(--lnk-color-1);
+}
+

@@ -1,3 +1,49 @@
-html, body {
-    
+:root {
+    --txt-color-01: rgb(121, 121, 121); /* колір основого тексту */
+    --txt-color-02: rgb(0, 0, 0); /* колір основого тексту на фоні (інверсія) */
+    --txt-color-h1: rgb(103, 9, 9) ;
+    --bg-color-01: rgb(103, 9, 9); /* колір фону 1 */
+    --bg-color-02: rgb(0, 0, 0); /* колір фону 2 */
+    --ink_color_01: #908; /* коілр покликань */
+    --ink_color_02: #c00; /* коілр покликань hover */
+    --btn-color-01:  rgb(121, 121, 121); /* колір кнопки 1 */
+    --btn-color-02:  rgb(207, 203, 203); /*колір кнопки 2*/
+    --mb-padding: 20px; /* відсутипи да контенту на мобільному */
+    --ipad-padding: 50px; /* відступи до контенту на планшеті */
+    --max-width: 1380px; /* обмеження ширини контексту для desktop */
+    --ver-desk-pad: 8px; /* відступи по вертикалі у секціях desktop */
+    --ver-mob-pad: 25px; /* відступи по вертикалі у секціях mobile */
 }
+
+.wrapper {
+    display: flex;
+    flex-direction:column;
+    min-height: 100dvh;
+    margin-left: auto;  /* Центрування блочного елементу по-горизонталі */
+    margin-right: auto; /* Центрування блочного елементу по-горизонталі */
+    padding: 0;         /* Внутнішній відступ для блочного елементу */
+    position: relative;
+}
+
+.container {
+    padding-left: var(--mob-padding);
+    padding-right: var(--mob-padding);
+    min-height: 140dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
+}
+
+.container > .inside {  /* Direct child .inside in .container */
+    margin: auto;       /* Центрування по-горизонталі */
+    padding-top: var(--ver-padding);
+    padding-bottom: var(--ver-padding);
+    max-width: var(--max-width);
+}
+
+header.container > .inside {  
+    padding-top: 60px;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 100px;
+}
+
